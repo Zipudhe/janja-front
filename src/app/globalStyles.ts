@@ -2,7 +2,7 @@ import { createGlobalStyle } from 'styled-components'
 
 export const GlobalStyles = createGlobalStyle`
   * {
-    --font-family: Space Mono;
+    --font-family: "Space Mono";
     --text-md: 16px; // ptag for desktop
     --text-sm: 13px;
     --text-letter-spacing: 0.32px;
