@@ -1,19 +1,17 @@
-import { useEffect, useState } from 'react'
+import { useCallback, useEffect, useState } from 'react'
 
 const useMobile = () => {
 
-  const [isMobile, setIsMobile] = useState(false)
+  const isClient = typeof window === 'object'
+  const getWindowSize = useCallback(() => window.innerWidth <= 820 ? true : false, [isClient])
+  
+  const [isMobile, setIsMobile] = useState(getWindowSize())
 
   useEffect(() => {
-    if(window.document.readyState == 'complete') {
-      window.addEventListener('resize', (e) => {
-        if(window.innerWidth <= 820 ) {
-          setIsMobile(true)
-        } else {
-          setIsMobile(false)
-        }
-      })
-    }
+    const handleResize = () => setIsMobile(getWindowSize())
+    window.addEventListener('resize', handleResize)
+
+    return window.removeEventListener('resize', handleResize)
   }, [window.document.readyState])
 
   return isMobile

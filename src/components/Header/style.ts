@@ -10,20 +10,11 @@ export const HeaderWrapper = styled.section`
   min-height: 50px;
   width: 100vw;
 
-  #mobile {
-    width: 100px;
-    height: 100%;
-    background-color: red;
-
-    :hover {
-      cursor: pointer;
-    }
-  }
 
   @media screen and (max-width: 820px) {
-    flex-direction: row-reverse;
+    height: 15vh;
     justify-content: space-between;
-    padding: 0 12px;
+    padding: 12px;
   }
 `
 
@@ -39,8 +30,13 @@ export const Link = styled.a`
   letter-spacing: 1.5px;
 
 
-  @media screen and (max-width: 980px) {
-    font-size: 21px;
+  @media screen and (min-width: 821px) and (max-width: 980px) {
+    font-size: var(--header-xsm);
+  }
+
+  @media screen and (max-width: 820px) {
+    font-size: var(--text-md);
+    text-decoration: underline;
   }
 
   :hover {

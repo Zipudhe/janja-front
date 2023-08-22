@@ -4,7 +4,10 @@ import Header from ".";
 
 const HeaderStory: Meta<typeof Header> = {
   title: 'Components/Header',
-  component: Header
+  component: Header,
+  parameters: {
+    layout: 'fullscreen'
+  }
 }
 
 type Story = StoryObj<typeof Header>

@@ -1,6 +1,7 @@
 import React from "react";
 
 import { HeaderWrapper, Link, IconDiv, LinkWrapper } from './style'
+import HamburgerMenu from '../hamburgerMenu'
 
 import useMobile from "../../hooks/useMobile";
 
@@ -23,7 +24,7 @@ export const Header = () => {
           <Link> Contato </Link>
         </LinkWrapper>
         :
-        <div id="mobile"> Mobile </div>
+        <HamburgerMenu />
       }
       
   </HeaderWrapper>
