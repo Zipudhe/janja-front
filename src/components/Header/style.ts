@@ -4,17 +4,18 @@ import { HeaderText } from '../Typography/headerText'
 export const HeaderWrapper = styled.section`
   display: inline-flex;
   align-items: center;
+  padding: 12px;
   
   height: 10vh;
   max-height: 120px;
   min-height: 50px;
-  width: 100vw;
+  width: 100%;
 
 
   @media screen and (max-width: 820px) {
+    flex-direction: row-reverse;
     height: 15vh;
     justify-content: space-between;
-    padding: 12px;
   }
 `
 

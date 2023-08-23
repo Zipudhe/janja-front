@@ -1,7 +1,7 @@
 import React from "react";
 
 import { HeaderWrapper, Link, IconDiv, LinkWrapper } from './style'
-import HamburgerMenu from '../hamburgerMenu'
+import HamburgerMenu from '../HamburgerMenu'
 
 import useMobile from "../../hooks/useMobile";
 
@@ -12,7 +12,6 @@ export const Header = () => {
   return (
     <HeaderWrapper>
       <IconDiv>  </IconDiv>
-
       {
         !mobile ? 
         <LinkWrapper>
