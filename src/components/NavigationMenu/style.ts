@@ -11,6 +11,14 @@ export const NavigationWrapper = styled.nav`
   min-height: 50px;
   width: 100%;
 
+  position: fixed;
+  top: 0;
+  left: 0;
+
+  z-index: 2;
+  opacity: 0.85;
+
+  background-color: black;
 
   @media screen and (max-width: 850px) {
     flex-direction: row-reverse;
@@ -29,6 +37,7 @@ export const Link = styled.a`
   font-size: 25px;
   line-height: 155%;
   letter-spacing: 1.5px;
+  color: white;
 
 
   @media screen and (min-width: 821px) and (max-width: 980px) {
