@@ -3,7 +3,7 @@ import { Meta, StoryObj } from '@storybook/react'
 import { HeaderText } from './headerText'
 
 const DefaultExport: Meta<typeof HeaderText> = {
-  title: "Typography/Header",
+  title: "Typography/HeaderText",
   component: HeaderText,
 }
 
