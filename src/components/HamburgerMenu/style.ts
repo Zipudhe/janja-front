@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { Link } from '../Header/style'
+import { Link } from '../NavigationMenu/style'
 
 export const Wrapper = styled.div`
   width: 50px;

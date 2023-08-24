@@ -1,16 +1,16 @@
 import React from "react";
 
-import { HeaderWrapper, Link, IconDiv, LinkWrapper } from './style'
+import { NavigationWrapper, Link, IconDiv, LinkWrapper } from './style'
 import HamburgerMenu from '../HamburgerMenu'
 
 import useMobile from "../../hooks/useMobile";
 
-export const Header = () => {
+export const Navigation = () => {
 
   const mobile = useMobile()  
 
   return (  
-    <HeaderWrapper>
+    <NavigationWrapper>
       <IconDiv>  </IconDiv>
       {
         !mobile ? 
@@ -25,8 +25,8 @@ export const Header = () => {
         :
         <HamburgerMenu />
       }
-  </HeaderWrapper>
+  </NavigationWrapper>
   )
 }
 
-export default Header
+export default Navigation

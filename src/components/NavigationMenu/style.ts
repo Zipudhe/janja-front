@@ -1,7 +1,7 @@
 import styled from "styled-components";
 import { HeaderText } from '../Typography/headerText'
 
-export const HeaderWrapper = styled.nav`
+export const NavigationWrapper = styled.nav`
   display: inline-flex;
   align-items: center;
   padding: 12px;
