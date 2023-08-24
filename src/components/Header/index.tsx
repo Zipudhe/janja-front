@@ -7,9 +7,9 @@ import useMobile from "../../hooks/useMobile";
 
 export const Header = () => {
 
-  const mobile = useMobile()
+  const mobile = useMobile()  
 
-  return (
+  return (  
     <HeaderWrapper>
       <IconDiv>  </IconDiv>
       {

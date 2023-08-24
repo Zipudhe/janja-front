@@ -12,7 +12,7 @@ export const HeaderWrapper = styled.nav`
   width: 100%;
 
 
-  @media screen and (max-width: 820px) {
+  @media screen and (max-width: 850px) {
     flex-direction: row-reverse;
     height: 15vh;
     justify-content: space-between;
@@ -35,7 +35,7 @@ export const Link = styled.a`
     font-size: var(--header-xsm);
   }
 
-  @media screen and (max-width: 820px) {
+  @media screen and (max-width: 850px) {
     font-size: var(--text-md);
     text-decoration: underline;
   }
@@ -53,7 +53,7 @@ export const IconDiv = styled.div`
 
   background-color: purple;
 
-  @media screen and (max-width: 820px) {
+  @media screen and (max-width: 850px) {
     width: 200px;
   }
 `
