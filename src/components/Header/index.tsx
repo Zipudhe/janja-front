@@ -25,7 +25,6 @@ export const Header = () => {
         :
         <HamburgerMenu />
       }
-      
   </HeaderWrapper>
   )
 }
