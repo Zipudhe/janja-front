@@ -6,8 +6,12 @@ export interface IText {
 }
 
 export const Header1 = styled.h1<IText>`
-  font-size: ${({ mobile }) => mobile ? "34px" : "65px"};
+  font-size: var(--header-xlg);
   font-weight: ${({ bold }) => bold ? '700' : 'normal'};
+  
+  @media screen and (max-width: 890px) {
+    font-size: var(--header-md);
+  }
 `
 
 export const Header2 = styled.h2<IText>`
