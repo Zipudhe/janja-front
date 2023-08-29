@@ -2,7 +2,6 @@ import styled from 'styled-components'
 
 export interface IText {
   bold: boolean,
-  mobile: boolean
 }
 
 export const Header1 = styled.h1<IText>`
@@ -15,25 +14,41 @@ export const Header1 = styled.h1<IText>`
 `
 
 export const Header2 = styled.h2<IText>`
-  font-size: ${({ mobile }) => mobile ? '24px' : '40px'};
+  font-size: var(--header-lg);
   font-weight: ${({ bold }) => bold ? '700' : 'normal'};
+
+  @media screen and (max-width: 890px) {
+    font-size: var(--header-md);
+  }
 `
 
 export const Header3 = styled.h3<IText>`
-  font-size: ${({ mobile }) => mobile ? '21px' : '25px'};
+  font-size: var(--header-sm);
   font-weight: ${({ bold }) => bold ? '700' : 'normal'};
+
+  @media screen and (max-width: 890px) {
+    font-size: var(--header-xsm);
+  }
 `
 
 export const Paragraph = styled.p<IText>`
-  font-size: ${({ mobile }) => mobile ? '13px' : '16px'};
+  font-size: var(--text-md);
   font-weight: ${({ bold }) => bold ? '700' : 'normal'};
   line-height: 160%;
   letter-spacing: 0.26px;
+
+  @media screen and (max-width: 890px) {
+    font-size: var(--text-sm);
+  }
 `
 
 export const Span = styled.span<IText>`
-  font-size: ${({ mobile }) => mobile ? '13px' : '16px'};
+  font-size: var(--text-md);
   font-weight: ${({ bold }) => bold ? '700' : 'normal'};
   line-height: 160%;
   letter-spacing: 0.26px;
+
+  @media screen and (max-width: 890px) {
+    font-size: var(--text-sm);
+  }
 `
