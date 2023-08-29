@@ -8,7 +8,7 @@ export const NavigationWrapper = styled.nav`
   
   height: 10vh;
   max-height: 120px;
-  min-height: 50px;
+  min-height: 80px;
   width: 100%;
 
   position: fixed;
