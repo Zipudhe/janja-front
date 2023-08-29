@@ -1,9 +1,10 @@
 import styled from 'styled-components'
 
 export const AboutSection = styled.section`
+  display: flex;
+  flex-direction: column;
+  
   min-height: 400px;
-  height: 30vh;
-  max-height: 500px;
   width: 100%;
 
   padding: 12px;
@@ -14,8 +15,24 @@ export const AboutSection = styled.section`
     margin-bottom: 12px;
   }
 
-  p {
-    text-align: justify;
-    text-overflow: ellipsis;
+  button {
+    margin-top: 12px;
+    width: 75%;
+    align-self: center;
+  }
+`
+
+export const TextWrapper = styled.div`
+  padding: 12px;
+
+  transition: height 1s ease-in-out;
+  height: 80%;
+
+  overflow: hidden;
+  text-overflow: ellipsis;
+  text-align: justify;
+
+  .close {
+    height: 50vh;
   }
 `
