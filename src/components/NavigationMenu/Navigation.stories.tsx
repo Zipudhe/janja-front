@@ -12,7 +12,7 @@ const NavigationStory: Meta<typeof Navigation> = {
 
 type Story = StoryObj<typeof Navigation>
 
-export const Desktop: Story= {
+export const Desktop: Story = {
   render: () => <Navigation  />
 }
 

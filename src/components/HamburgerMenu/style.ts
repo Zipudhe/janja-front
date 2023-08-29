@@ -29,8 +29,12 @@ export const DropDownMenu = styled.div`
 
 
   position: relative;
-  top: 15px;
-  left: 0;
+  top: 4vh;
+  left: -12px;
+
+  background-color: black;
+  border-radius: 8px;
+  opacity: 0.85;
 `
 
 export const DropDownLink = styled(Link)``

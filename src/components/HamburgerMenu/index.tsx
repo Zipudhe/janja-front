@@ -1,6 +1,6 @@
 import React, { FC, useState } from 'react'
 
-import menuIcon from '../../../public/assets/icons8-hamburger-menu-50.svg'
+import menuIcon from '../../assets/icons8-hamburger-menu-50.svg'
 import { Wrapper, DropDownMenu, DropDownLink } from './style'
 
 export const HamburgerMenu: FC = () => {
