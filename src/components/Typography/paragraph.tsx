@@ -1,17 +1,15 @@
-import React, { FC } from "react";
+import React, { FC, HtmlHTMLAttributes, ReactNode } from "react";
 import { Paragraph, Span, IText } from './style'
 
+type MyTextElement = HtmlHTMLAttributes<HTMLParagraphElement | HTMLSpanElement>
 
-interface IParagrah extends IText {
-  type: 'span' | 'p',
-  children: React.ReactNode
-}
+type IParagrah = MyTextElement & { type?: 'span' | 'p', children: ReactNode, bold: boolean };
 
-export const ParagraphText: FC<IParagrah> = ({bold = false, mobile = false, type = 'p', children }) => {
+export const ParagraphText: FC<IParagrah> = ({bold = false, type = 'p', children, ...props }) => {
 
   if(type == 'p') {
-    return <Paragraph bold={bold} mobile={mobile}> { children } </Paragraph>
+    return <Paragraph {...props} bold={bold}> { children } </Paragraph>
   }
   
-  return <Span bold={bold} mobile={mobile} > { children } </Span>
+  return <Span {...props} bold={bold} > { children } </Span>
 }
