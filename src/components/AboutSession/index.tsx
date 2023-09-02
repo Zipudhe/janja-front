@@ -3,6 +3,7 @@ import React, { FC, useState } from 'react'
 import { AboutSection, TextWrapper, ButtonDiv } from './style'
 import { HeaderText } from '../Typography/headerText'
 import { ParagraphText } from '../Typography/paragraph'
+import MediaSection from '../MediaSection'
 
 import ArrowIcon from '../../assets/chevron-down-solid.svg'
 
@@ -22,6 +23,7 @@ export const About: FC<AboutSection> = ({ text }) => {
       <TextWrapper>
         <ParagraphText className={expanded ? 'open' : 'close'} bold={false} type='p' > { text } </ParagraphText>
       </TextWrapper>
+      <MediaSection className='media' />
       <ButtonDiv onClick={toggleExpanded} >
         <img {...ArrowIcon} alt="icon" className={expanded ? 'up' : 'down'} />
       </ButtonDiv>
