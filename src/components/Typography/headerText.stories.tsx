@@ -20,10 +20,6 @@ export const Primary: Story = {
       options: ['h1', 'h2', 'h3'],
       control: 'inline-radio',
       defaultValue: 'h1'
-    },
-    mobile: {
-      control: 'boolean',
-      defaultValue: false
     }
   }
 }

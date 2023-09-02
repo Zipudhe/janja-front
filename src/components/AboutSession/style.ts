@@ -21,8 +21,12 @@ export const AboutSection = styled.section`
     align-self: center;
   }
 
+  .media {
+    align-self: center;
+  }
+
   @media screen and (min-width: 890px) {
-    button {
+    div:last-child {
       display: none;
     }
   }
