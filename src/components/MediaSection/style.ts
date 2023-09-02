@@ -10,6 +10,8 @@ export const IconWrapper = styled.article`
 
   column-gap: 38px;
 
+  margin-top: 12px;
+
   img {
     cursor: pointer;
   }
