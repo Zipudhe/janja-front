@@ -6,7 +6,7 @@ import { CalendarInterface } from '../CalendarChip'
 type CalendarType = typeof CalendarSection
 
 const CalendarStory: Meta<CalendarType> = {
-  title: 'Components/CalendarSection',
+  title: 'Section/CalendarSection',
   component: CalendarSection
 }
 

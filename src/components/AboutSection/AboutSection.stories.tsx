@@ -10,7 +10,7 @@ Atualmente, Angela dá continuidade à sua carreira, marcada por um repertório 
 `
 
 const AboutSectionStory: Meta<typeof About> = {
-  title: "Components/AboutSection",
+  title: "Section/AboutSection",
   component: About,
   parameters: {
     layout: 'fullscreen'
