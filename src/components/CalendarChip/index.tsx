@@ -4,7 +4,7 @@ import { CalendarWrapper, Divider, CalendarLink } from './style'
 import { ParagraphText } from '../Typography/paragraph'
 import { HeaderText } from '../Typography/headerText'
 
-interface CalendarInterface {
+export interface CalendarInterface {
   date: string,
   eventName: string,
   location: string,
