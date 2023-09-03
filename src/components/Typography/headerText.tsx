@@ -1,10 +1,10 @@
-import React, { FC } from "react";
+import React, { FC, HtmlHTMLAttributes, ReactNode } from "react";
 import { Header1, Header2, Header3, IText } from './style'
 
-interface IHeaderText extends IText {
-  type: 'h1' | 'h2' | 'h3',
-  children: React.ReactNode
-}
+type MyTextElement = HtmlHTMLAttributes<HTMLParagraphElement | HTMLSpanElement>
+
+type IHeaderText = MyTextElement & { type?: 'h1' | 'h2' | 'h3', children: ReactNode, bold?: boolean };
+
 
 export const HeaderText: FC<IHeaderText> = ({bold = false, type = 'h1', children }) => {
 
