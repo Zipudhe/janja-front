@@ -3,7 +3,7 @@ import { Paragraph, Span, IText } from './style'
 
 type MyTextElement = HtmlHTMLAttributes<HTMLParagraphElement | HTMLSpanElement>
 
-type IParagrah = MyTextElement & { type?: 'span' | 'p', children: ReactNode, bold: boolean };
+type IParagrah = MyTextElement & { type?: 'span' | 'p', children: ReactNode, bold?: boolean };
 
 export const ParagraphText: FC<IParagrah> = ({bold = false, type = 'p', children, ...props }) => {
 
