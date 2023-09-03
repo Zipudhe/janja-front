@@ -5,7 +5,7 @@ import { AlbumSection } from './'
 type AlbumType = typeof AlbumSection
 
 const defaultExport: Meta<AlbumType> = {
-  title: 'Components/AlbumSection',
+  title: 'Section/AlbumSection',
   component: AlbumSection
 }
 
