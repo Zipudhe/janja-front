@@ -5,4 +5,8 @@ export const ContatoWrapper = styled.section`
   display: flex;
 
   justify-content: space-evenly;
+
+  @media screen and (max-width: 890px) {
+    flex-direction: column;
+  }
 `
