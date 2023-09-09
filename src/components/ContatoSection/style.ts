@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const ContatoWrapper = styled.section`
-  width: 75%;
+  width: 100%;
   display: flex;
 
   justify-content: space-evenly;

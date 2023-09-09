@@ -1,3 +1,5 @@
+"use client";
+
 import React, { FC, HTMLAttributes } from "react";
 import { IconWrapper } from './style'
 import InstagramLogo from '../../assets/icons8-instagram.svg'

@@ -1,3 +1,4 @@
+'use client';
 import { createGlobalStyle } from 'styled-components'
 
 export const GlobalStyles = createGlobalStyle`
@@ -18,5 +19,15 @@ export const GlobalStyles = createGlobalStyle`
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+
+    section {
+      padding: 16px;
+    }
+
+    main {
+      width: 100vw;
+      padding: 0 32px;
+      max-width: 2000px;
+    }
   }
 `

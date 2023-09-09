@@ -1,3 +1,4 @@
+"use client"
 import React, { FC, useState } from 'react'
 
 import menuIcon from '../../assets/icons8-hamburger-menu-50.svg'

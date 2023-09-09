@@ -1,3 +1,4 @@
+"use client";
 import React, { FC, HtmlHTMLAttributes, ReactNode } from "react";
 import { Paragraph, Span, IText } from './style'
 

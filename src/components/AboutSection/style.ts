@@ -7,7 +7,6 @@ export const AboutSection = styled.section`
   min-height: 400px;
   width: 100%;
 
-  padding: 12px;
   overflow: hidden;
 
   h1 {
@@ -59,10 +58,11 @@ export const TextWrapper = styled.div`
 
   transition: max-height 1s ease-in-out;
   max-height: 1000px;
+  min-height: 300px;
 
   overflow: hidden;
   text-overflow: ellipsis;
-  text-align: justify;
+  text-align: center;
 
   p {
     overflow: hidden;
@@ -75,5 +75,10 @@ export const TextWrapper = styled.div`
 
   .close {
     max-height: 400px;
+  }
+
+
+  @media screen and (max-width: 890px) {
+    text-align: justify;
   }
 `

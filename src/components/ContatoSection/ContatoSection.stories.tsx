@@ -1,5 +1,5 @@
 import { Meta, StoryObj } from '@storybook/react'
-import { mockedArgs } from '../Contato/Calendar.stories'
+import { mockedArgs } from '../Contato/Contato.stories'
 
 import { ContatoSection } from '.'
 

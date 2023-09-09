@@ -22,6 +22,7 @@
     "typescript": "5.1.6"
   },
   "devDependencies": {
+    "@babel/preset-typescript": "^7.22.11",
     "@storybook/addon-essentials": "^7.3.2",
     "@storybook/addon-interactions": "^7.3.2",
     "@storybook/addon-links": "^7.3.2",
@@ -31,6 +32,7 @@
     "@storybook/nextjs": "^7.3.2",
     "@storybook/react": "^7.3.2",
     "@storybook/testing-library": "^0.2.0",
-    "@types/styled-components": "^5.1.26"
+    "@types/styled-components": "^5.1.26",
+    "babel-plugin-styled-components": "^2.1.4"
   }
 }

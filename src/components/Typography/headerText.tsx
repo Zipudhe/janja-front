@@ -1,3 +1,4 @@
+"use client";
 import React, { FC, HtmlHTMLAttributes, ReactNode } from "react";
 import { Header1, Header2, Header3, IText } from './style'
 

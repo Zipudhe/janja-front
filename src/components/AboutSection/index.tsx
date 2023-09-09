@@ -1,3 +1,4 @@
+"use client"
 import React, { FC, useState } from 'react'
 
 import { AboutSection, TextWrapper, ButtonDiv } from './style'
