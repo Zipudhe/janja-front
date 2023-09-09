@@ -1,3 +1,4 @@
+"use client";
 import React from "react";
 
 import { NavigationWrapper, Link, IconDiv, LinkWrapper } from './style'

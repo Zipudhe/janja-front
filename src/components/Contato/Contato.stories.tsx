@@ -1,5 +1,5 @@
 import { Meta, StoryObj } from '@storybook/react'
-import { Contato, IContato } from './'
+import { Contato, IContato } from '.'
 
 type TypeofContato = typeof Contato
 

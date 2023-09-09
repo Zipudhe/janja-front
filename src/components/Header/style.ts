@@ -7,6 +7,6 @@ export const HeaderWrapper = styled.header`
 
 export const CoverImage = styled.img`
   object-fit: cover;
-  width: 100%;
+  width: 100vw;
   height: 100%;
 `

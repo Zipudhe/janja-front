@@ -20,6 +20,10 @@ export const Header2 = styled.h2<IText>`
   @media screen and (max-width: 890px) {
     font-size: var(--header-md);
   }
+
+  @media screen and (max-width: 600px) {
+    font-size: var(--header-sm);
+  }
 `
 
 export const Header3 = styled.h3<IText>`
@@ -28,6 +32,10 @@ export const Header3 = styled.h3<IText>`
 
   @media screen and (max-width: 890px) {
     font-size: var(--header-xsm);
+  }
+
+  @media screen and (max-width: 600px) {
+    font-size: var(--header-sm);
   }
 `
 

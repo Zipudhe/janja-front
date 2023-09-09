@@ -1,15 +1,17 @@
+"use client";
+
 import React, { FC } from 'react'
 
 import { AlbunsWrapper } from './style'
 
 import { AlbumChip } from '../AlbumChip'
 
-type Album = {
+export type Album = {
   name: string,
   img: string
 }
 
-interface IAlbumSection {
+export interface IAlbumSection {
   albuns: Album[]
 }
 

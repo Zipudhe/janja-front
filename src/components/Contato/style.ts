@@ -8,6 +8,12 @@ export const ContatoWrapper = styled.article`
   justify-content: center;
   align-items: center;
   gap: 23px; 
+
+  @media screen and (max-width: 890px) {
+    gap: 0;
+    padding: 12px;
+    width: auto;
+  }
 `
 
 export const Info =  styled.div`
@@ -18,6 +24,11 @@ export const Info =  styled.div`
   justify-content: center;
   align-items: center;
   gap: 23px; 
+
+  @media screen and (max-width: 890px) {
+    gap: 0;
+    padding: 0 12px;
+  }
 `
 
 export const ContactInfo = styled.div`
@@ -30,5 +41,14 @@ export const ContactInfo = styled.div`
   h3 {
     display: grid;
     place-items: center;
+  }
+
+  @media screen and (max-width: 890px) {
+    gap: 0;
+    justify-content: center;
+    
+    img {
+      scale: 0.5;
+    }
   }
 `

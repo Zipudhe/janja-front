@@ -2,7 +2,7 @@ import { styled } from "styled-components";
 
 export const AlbunsWrapper = styled.section`
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(250px, max-content));
+  grid-template-columns: repeat(auto-fit, minmax(250px, max-content));
   grid-column-gap: 65px;
   place-content: center;
 
