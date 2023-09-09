@@ -13,7 +13,7 @@ export const Wrapper = styled.div`
   }
 `
 
-export const DropDownMenu = styled.div`
+export const DropDownMenu = styled.menu`
   display: grid;
   height: 0;
   width: 0;
