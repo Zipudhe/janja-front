@@ -19,7 +19,7 @@ export const About: FC<AboutSection> = ({ text }) => {
   const toggleExpanded = () => setExpanded((prevState) => !prevState)
 
   return (
-    <AboutSection>
+    <AboutSection id="sobre" >
       <HeaderText bold type='h1' > Angela Velloso </HeaderText>
       <TextWrapper>
         <ParagraphText className={expanded ? 'open' : 'close'} bold={false} type='p' > { text } </ParagraphText>

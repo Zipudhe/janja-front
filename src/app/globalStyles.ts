@@ -20,14 +20,18 @@ export const GlobalStyles = createGlobalStyle`
     padding: 0;
     box-sizing: border-box;
 
-    section {
-      padding: 16px;
-    }
+    scroll-behavior: smooth;
+  }
 
-    main {
-      width: 100vw;
-      padding: 0 32px;
-      max-width: 2000px;
-    }
+  main {
+    width: 100vw;
+    padding: 0 32px;
+    max-width: 2000px;
+
+    scroll-snap-type: y mandatory;
+  }
+
+  section {
+    padding: 16px;
   }
 `

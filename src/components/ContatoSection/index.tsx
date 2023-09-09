@@ -13,7 +13,7 @@ export const ContatoSection: FC<IContatoSection> = ({ contatos }) => {
   const [contato1, contato2] = contatos
 
   return (
-    <ContatoWrapper>
+    <ContatoWrapper id="contato">
       <Contato {...contato1} />
       <hr />
       <Contato {...contato2} />

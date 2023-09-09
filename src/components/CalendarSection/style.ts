@@ -10,4 +10,5 @@ export const SectionWrapper = styled.section`
   grid-row-gap: 12px;
 
   place-content: center;
+  scroll-snap-align: center;
 `

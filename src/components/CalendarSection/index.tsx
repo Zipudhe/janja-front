@@ -12,7 +12,7 @@ interface ICalendarSection {
 export const CalendarSection: FC<ICalendarSection> = ({ events }) => {
 
   return (
-    <SectionWrapper>
+    <SectionWrapper id="shows" >
       { 
         events.map(event => (
           <CalendarChip {...event} />
