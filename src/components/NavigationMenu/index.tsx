@@ -16,12 +16,12 @@ export const Navigation = () => {
       {
         !mobile ? 
         <LinkWrapper>
-          <Link> Sobre </Link>
+          <Link href="#sobre" > Sobre </Link>
           <Link> Discografia </Link>
-          <Link> Shows </Link>
+          <Link href="#shows" > Shows </Link>
           <Link> Projetos </Link>
           <Link> Fotos e Videos </Link>
-          <Link> Contato </Link>
+          <Link href="#contato" > Contato </Link>
         </LinkWrapper>
         :
         <HamburgerMenu />

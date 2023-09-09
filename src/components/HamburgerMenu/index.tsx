@@ -14,12 +14,12 @@ export const HamburgerMenu: FC = () => {
     <Wrapper onClick={toggleMenu} >
       <img {...menuIcon} alt="menu icon" />
       <DropDownMenu className={isOpen ? 'open' : ''} >
-        <DropDownLink> Sobre </DropDownLink>
+        <DropDownLink href='#sobre' > Sobre </DropDownLink>
         <DropDownLink> Discografia </DropDownLink>
-        <DropDownLink> Shows </DropDownLink>
+        <DropDownLink href='#shows' > Shows </DropDownLink>
         <DropDownLink> Projetos </DropDownLink>
         <DropDownLink> Fotos e Videos </DropDownLink>
-        <DropDownLink> Contato </DropDownLink>
+        <DropDownLink href="contato" > Contato </DropDownLink>
       </DropDownMenu>
     </Wrapper>
   )

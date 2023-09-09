@@ -12,6 +12,7 @@ export const AboutSection = styled.section`
   h1 {
     text-align: center;
     margin-bottom: 12px;
+    scroll-snap-align: start;
   }
 
   button {
