@@ -2,7 +2,7 @@
 
 import React, { FC } from 'react'
 
-import { CalendarWrapper, Divider, CalendarLink } from './style'
+import { CalendarWrapper, Divider, CalendarLink, EventDiv } from './style'
 import { ParagraphText } from '../Typography/paragraph'
 import { HeaderText } from '../Typography/headerText'
 
@@ -26,12 +26,16 @@ export const CalendarChip: FC<CalendarInterface> = ({ date, eventName, location,
       <HeaderText type='h2' > { day } </HeaderText>
       <HeaderText type='h2' > { month } </HeaderText>
       <Divider />
-      <ParagraphText> { eventName } </ParagraphText>
-      <ParagraphText> { location } </ParagraphText>
+
+      <HeaderText style={{ textAlign: 'center' }} type="h3"> { eventName } </HeaderText>
+      <EventDiv>
+        <HeaderText type="h3"> <strong> Local </strong> </HeaderText>
+        <ParagraphText> { location } </ParagraphText>
+      </EventDiv>
       {
         link ? 
           <CalendarLink href={link} target='_blank' referrerPolicy='no-referrer' >
-            Link pro sympla 
+            Link do evento
           </CalendarLink> 
         : 
         ''

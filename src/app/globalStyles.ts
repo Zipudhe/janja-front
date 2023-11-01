@@ -16,6 +16,10 @@ export const GlobalStyles = createGlobalStyle`
     --header-xlg: 65px;
     --bold: 700;
 
+    --background-color: #1B0000;
+    --primary-color: #CFC6A3;
+    --secondary-color: #0593DD;
+
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -29,6 +33,7 @@ export const GlobalStyles = createGlobalStyle`
     max-width: 2000px;
 
     scroll-snap-type: y mandatory;
+    background-color: var(--background-color);
   }
 
   section {

@@ -4,8 +4,8 @@ import { ContatoWrapper, Info, ContactInfo } from './style'
 import { ParagraphText } from '../Typography/paragraph'
 import { HeaderText } from '../Typography/headerText'
 
-import InstagramIcon from '../../assets/icons8-instagram.svg'
-import WhatsAppIcon from '../../assets/icons8-whatsapp.svg'
+import { faWhatsapp, faInstagram } from '@fortawesome/free-brands-svg-icons'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 export interface IContato {
   name: string,
@@ -20,11 +20,11 @@ export const Contato: FC<IContato> = ({ name, description, instagram, whatsapp }
     <ParagraphText> { description } </ParagraphText>
     <Info>
       <ContactInfo>
-        <img {...WhatsAppIcon} />
+        <FontAwesomeIcon color="#0593DD" size="3x" icon={faWhatsapp} />
         <HeaderText type="h3"> { whatsapp } </HeaderText>
       </ContactInfo>
       <ContactInfo>
-        <img {...InstagramIcon} />
+        <FontAwesomeIcon color="#0593DD" size="3x" icon={faInstagram} />
         <HeaderText type="h3"> { instagram } </HeaderText>
       </ContactInfo>
     </Info>

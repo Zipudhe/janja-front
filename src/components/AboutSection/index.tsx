@@ -6,7 +6,8 @@ import { HeaderText } from '../Typography/headerText'
 import { ParagraphText } from '../Typography/paragraph'
 import MediaSection from '../MediaSection'
 
-import ArrowIcon from '../../assets/chevron-down-solid.svg'
+import { faArrowDown, faArrowUp } from '@fortawesome/free-solid-svg-icons'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 interface AboutSection { 
   text: string
@@ -26,7 +27,11 @@ export const About: FC<AboutSection> = ({ text }) => {
       </TextWrapper>
       <MediaSection className='media' />
       <ButtonDiv onClick={toggleExpanded} >
-        <img {...ArrowIcon} alt="icon" className={expanded ? 'up' : 'down'} />
+        {
+          expanded ? 
+            <FontAwesomeIcon size={'2x'} icon={faArrowUp} /> :
+            <FontAwesomeIcon icon={faArrowDown} />
+        }
       </ButtonDiv>
     </AboutSection>
   )

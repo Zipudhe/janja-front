@@ -12,21 +12,21 @@ export const CalendarWrapper = styled.div`
 
   border-radius: 8px;
   background-color: #272323;
-
-  p {
-    color: white;
-  }
-
-  h2 {
-    color: white;
-  }
 `
 
 export const Divider = styled.hr`
   width: 91%;
-  border: 1px solid white;
+  border: 1px solid #0593DD;
 `
 
 export const CalendarLink = styled(Link)`
 font-size: var(--text-md);
+color: var(--primary-color);
+`
+
+export const EventDiv = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
 `
