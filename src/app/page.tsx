@@ -19,13 +19,15 @@ export interface HomeInterface {
 // TODO refactor components types and add layer to fetch data
 export const Home: FC<HomeInterface> = ({ headerImg, aboutText, albuns, calendars, contacts }) => {
   return (
-    <main>
-      <Header imageSrc={headerImg} />
-      <About text={aboutText} />
-      <AlbumSection albuns={albuns} />
-      <CalendarSection events={calendars} />
-      <ContatoSection contatos={contacts} />
-    </main>
+    <>
+      <Header />
+      <main>
+        <About text={aboutText} />
+        <AlbumSection albuns={albuns} />
+        <CalendarSection events={calendars} />
+        <ContatoSection contatos={contacts} />
+      </main>
+    </>
   )
 }
 

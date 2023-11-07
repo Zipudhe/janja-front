@@ -1,5 +1,5 @@
-import { Meta, StoryObj } from '@storybook/react'
-import Home, { HomeInterface } from './page'
+import { Meta, StoryObj } from "@storybook/react"
+import Home, { HomeInterface } from "./page"
 import { mockedAlbuns } from "../components/AlbumSection/AlbumSection.stories"
 import { mockedArgs as mockedContatos } from "../components/Contato/Contato.stories"
 import { mockedCalendar } from "../components/CalendarChip/CalendarChip.stories"
@@ -11,7 +11,7 @@ const storyComponent: Meta<typeofHome> = {
   title: "Pages/Home",
   component: Home,
   parameters: {
-    layouy: "fullscreen"
+    layout: "fullscreen"
   }
 }
 
