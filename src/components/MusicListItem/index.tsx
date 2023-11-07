@@ -18,7 +18,7 @@ export const MusicListItem: FC<MusicListItemProps> = ({ title, link  }) => {
       <ListActionsDiv >
         <FontAwesomeIcon color='#0593DD' size={'2x'} icon={faPlay} />
         <Divider />
-        <a href={`${link}`} >
+        <a target="#" rel="noreferer noopener" href={`${link}`} >
           <FontAwesomeIcon color='white' size={'2x'} icon={faClipboardList} />
         </a>
       </ListActionsDiv>
