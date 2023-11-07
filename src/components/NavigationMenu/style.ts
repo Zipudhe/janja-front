@@ -12,11 +12,7 @@ export const NavigationWrapper = styled.nav`
   min-height: 80px;
   width: 100%;
 
-  position: fixed;
-  top: 0;
-  left: 0;
-
-  z-index: 2;
+  position: absolute;
   opacity: 0.85;
 
   background-color: black;
