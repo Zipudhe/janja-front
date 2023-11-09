@@ -5,21 +5,26 @@ import { Wrapper, ListActionsDiv, ListTitle, Divider } from './style'
 import { faPlay, faClipboardList } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
-export type MusicListItemProps = {
+export type MusicItem = {
   title: string,
   link: string,
+  id: number
 }
 
-export const MusicListItem: FC<MusicListItemProps> = ({ title, link  }) => {
+export type MusicListItemProps = {
+  music: MusicItem
+}
+
+export const MusicListItem: FC<MusicListItemProps> = ({ music }) => {
 
   return (
     <Wrapper>
-      <ListTitle> { title } </ListTitle>
+      <ListTitle> { music.title } </ListTitle>
       <ListActionsDiv >
-        <FontAwesomeIcon color='#0593DD' size={'2x'} icon={faPlay} />
+        <FontAwesomeIcon color='white' size={'2x'} icon={faClipboardList} />
         <Divider />
-        <a target="#" rel="noreferer noopener" href={`${link}`} >
-          <FontAwesomeIcon color='white' size={'2x'} icon={faClipboardList} />
+        <a target="#" rel="noreferer noopener" href={`${music.link}`} >
+          <FontAwesomeIcon color='#0593DD' size={'2x'} icon={faPlay} />
         </a>
       </ListActionsDiv>
     </Wrapper>

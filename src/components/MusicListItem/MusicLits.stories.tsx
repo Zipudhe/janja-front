@@ -15,10 +15,15 @@ export default storyComponent
 
 type Story = StoryObj<MusicListStoryProp>
 
+export const mockedMusic = {
+  id: 2,
+  title: "Música 1",
+  link: "https://www.youtube.com/watch?v=5qap5aO4i9A"
+}
+
 export const defaultStory: Story = {
   render: (args) => <MusicListItem {...args} />,
   args: {
-    title: "Música 1",
-    link: "https://www.youtube.com/watch?v=5qap5aO4i9A"
+    music: mockedMusic
   }
 }

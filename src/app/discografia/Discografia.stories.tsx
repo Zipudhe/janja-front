@@ -1,6 +1,8 @@
 import { Meta, StoryObj } from '@storybook/react'
 import { DiscographyPage } from './index'
 
+import { mockedMusic } from '../../components/MusicListItem/MusicLits.stories'
+
 type typeofDiscographyPage = typeof DiscographyPage
 
 const storyComponent: Meta<typeofDiscographyPage> = {
@@ -15,6 +17,11 @@ export default storyComponent
 
 type Story = StoryObj<typeofDiscographyPage>
 
+const discography = [mockedMusic, mockedMusic, mockedMusic]
+
 export const defaultStory: Story = {
-  render: () => <DiscographyPage />
+  render: (args) => <DiscographyPage {...args} />,
+  args: {
+    discography
+  }
 }
