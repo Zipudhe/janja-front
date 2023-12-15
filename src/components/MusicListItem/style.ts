@@ -35,3 +35,9 @@ export const Divider = styled.hr`
   height: 90%;
   color: white;
 `
+
+export const ClipDiv = styled.div`
+  &:hover {
+    cursor: pointer;
+  }
+`

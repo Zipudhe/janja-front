@@ -1,27 +1,33 @@
 "use cleint";
 
-import React, { FC } from 'react'
-import { Wrapper, ListActionsDiv, ListTitle, Divider } from './style'
+import React, { FC, HtmlHTMLAttributes } from 'react'
+import { Wrapper, ListActionsDiv, ClipDiv, ListTitle, Divider } from './style'
 import { faPlay, faClipboardList } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 export type MusicItem = {
   title: string,
   link: string,
-  id: number
+  id: number,
 }
 
-export type MusicListItemProps = {
-  music: MusicItem
+export type MusicListItemProps = HtmlHTMLAttributes<HTMLDivElement> & {
+  music: MusicItem,
+  handleOpenDialog: () => void,
+  key: number
 }
 
-export const MusicListItem: FC<MusicListItemProps> = ({ music }) => {
+export const MusicListItem: FC<MusicListItemProps> = ({ music, key, handleOpenDialog }) => {
 
   return (
-    <Wrapper>
+    <Wrapper key={key} >
       <ListTitle> { music.title } </ListTitle>
       <ListActionsDiv >
-        <FontAwesomeIcon color='white' size={'2x'} icon={faClipboardList} />
+        <ClipDiv
+          onClick={handleOpenDialog}
+        >
+          <FontAwesomeIcon color='white' size={'2x'} icon={faClipboardList} />
+        </ClipDiv>
         <Divider />
         <a target="#" rel="noreferer noopener" href={`${music.link}`} >
           <FontAwesomeIcon color='#0593DD' size={'2x'} icon={faPlay} />

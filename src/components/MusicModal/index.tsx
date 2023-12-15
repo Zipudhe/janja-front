@@ -9,18 +9,20 @@ export type Artist = {
 }
 
 export type MusicModalProps = {
-  fichaTecnica: Artist[]
+  open: boolean,
+  fichaTecnica?: Artist[],
+  handleCloseDialog: () => void,
 }
 
-export const MusicModal: FC<MusicModalProps> = ({ fichaTecnica }) => {
-
+export const MusicModal: FC<MusicModalProps> = ({ fichaTecnica, open, handleCloseDialog }) => {
+  
   return (
-    <Dialog>
+    <Dialog open={open} onBlur={handleCloseDialog} >
       <HeaderText style={{ marginBottom: "32px" }} type="h3" > Ficha Técnica </HeaderText>
       <ListWrapper>
         {
-          fichaTecnica.map((artist, index) => (
-            <ListItem>
+          fichaTecnica?.map((artist, index) => (
+            <ListItem key={index}>
               <ParagraphText> {artist.nome} </ParagraphText>
               <div>
                 <Divider />

@@ -24,6 +24,7 @@ export const mockedMusic = {
 export const defaultStory: Story = {
   render: (args) => <MusicListItem {...args} />,
   args: {
-    music: mockedMusic
+    music: mockedMusic,
+    key: 12,
   }
 }
